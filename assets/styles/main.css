@@ -15,7 +15,7 @@
     --fs-22px:22px;
     --fs-20px: 20px;
     --fs-16px: 16px;
-    --section-padding: 70px;
+    --section-padding: 60px;
 }
 html{
     scroll-behavior: smooth;
@@ -94,7 +94,11 @@ h3.title{
     padding: 8px clamp(35px,5vw,45px);
     font-size: var(--fs-16px);
     font-weight: 500;
-    color: var(--title-color);
+    background-color: var(--title-color);
+    color: var(--clr-white);
+}
+section{
+    padding: var(--section-padding) 0;
 }
 /* Components */
 header{
@@ -158,24 +162,21 @@ header .container nav ul li a{
         color: var(--title-color);
     }
 }
-section{
-    padding: var(--section-padding) 0;
+.hero{
+    padding: calc(var(--section-padding) + 40px) 0;
 }
 .hero .container{
-    padding-top: 20px;
     min-height:100vh;
 }
-section .container .col .links{
+.hero .container .col .links{
     display: flex;
     flex-wrap: wrap;
     gap:20px 10px;
 }
-section .container .col .links a:first-child{
-    background-color: var(--title-color);
-    color: var(--clr-white);
-}
-section .container .col .links a:last-child{
+.hero .container .col .links a:last-child{
     border: 2px solid var(--title-color);
+    background-color: transparent;
+    color: var(--title-color);
 }
 .light .container .cards {
     display: flex;
