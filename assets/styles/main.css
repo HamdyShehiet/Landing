@@ -6,7 +6,7 @@
 :root {
     --clr-white: #ffffff;
     --bg: #f3f6ff;
-    --title-color: #091133;
+    --title-color: #070e30;
     --text-color: #6F7CB2;
     --alt-text-color: #5D6970;
     --alt-bg: #e7ecff;
@@ -95,13 +95,12 @@ h3.title{
     border-radius: 3px;
 }
 /* Components */
-/* header{
+header{
     position: fixed;
     top:0;
     z-index: 10;
     width:100%;
-    padding: 20px 0;
-    background-color: var(--clr-white);
+    padding: 25px 0;
 }
 header .container{
     display: flex;
@@ -109,10 +108,9 @@ header .container{
     justify-content: space-between;
 }
 .container .logo a{
-    gap: 10px;
-    font-size: var(--fs-22px);
+    font-size: calc(var(--fs-22px) + 4px);
     font-weight: 600;
-    color: var(--main-color);
+    color: var(--title-color);
 }
 header .container nav ul li a{
     display: block;
@@ -124,15 +122,15 @@ header .container nav ul li a{
     header .container nav ul{
         position: fixed;
         top: 110px;
-        right: -200%;
+        right: -100%;
         max-width: 240px;
         width: 60%;
         padding: 10px;
         text-align: center;
         border-radius: 20px;
         color: var(--clr-white);
-        background-color: var(--main-color);
-        transition: all 200ms linear;
+        background-color: var(--title-color);
+        transition: all 400ms linear;
     }
     header .container nav ul a{
         display: block;
@@ -149,14 +147,14 @@ header .container nav ul li a{
     }
     header .container nav ul{
         display: flex;
-        gap: 23px;
+        gap: 25px;
         color: var(--text-color);
     }
     header .container nav ul li a:hover,
     header .container nav ul li .active{
-        color: var(--main-color);
+        color: var(--title-color);
     }
 }
 section{
     padding: var(--section-padding) 0;
-}  */
+} 
