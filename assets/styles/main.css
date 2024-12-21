@@ -15,7 +15,7 @@
     --fs-22px:22px;
     --fs-20px: 20px;
     --fs-16px: 16px;
-    --section-padding: 60px;
+    --section-padding: 100px;
 }
 html{
     scroll-behavior: smooth;
@@ -162,9 +162,6 @@ header .container nav ul li a{
         color: var(--title-color);
     }
 }
-.hero{
-    padding: calc(var(--section-padding) + 40px) 0;
-}
 .hero .container{
     min-height:100vh;
 }
@@ -216,4 +213,18 @@ header .container nav ul li a{
     .light .container .cards .card{
         flex-basis: 45%;
     }
+}
+.contact-us{
+    background-color: var(--alt-bg);
+}
+.contact-us .container .details .price{
+    font-size: calc(var(--fs-40px) + 10px);
+    font-weight: 600;
+    color: var(--title-color);
+}
+.contact-us .container .details p{
+    font-size: var(--fs-20px);
+    font-weight: 500;
+    color: var(--text-color);
+
 }
