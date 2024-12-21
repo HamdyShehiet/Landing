@@ -87,7 +87,7 @@ h3.title{
 .text-center{
     text-align: center;
 }
-.special-btn{
+.link-btn{
     display: inline-block;
     padding: 8px 20px;
     font-size: var(--fs-16px);
