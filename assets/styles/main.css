@@ -12,6 +12,7 @@
     --alt-bg: #e7ecff;
     --fs-50px: 50px;
     --fs-36px: 36px;
+    --fs-22px:22px;
     --fs-20px: 20px;
     --fs-16px: 16px;
     --section-padding: 60px;
@@ -95,9 +96,10 @@ h3.title{
 }
 /* Components */
 /* header{
-    position: sticky;
+    position: fixed;
     top:0;
     z-index: 10;
+    width:100%;
     padding: 20px 0;
     background-color: var(--clr-white);
 }
@@ -150,11 +152,9 @@ header .container nav ul li a{
         gap: 23px;
         color: var(--text-color);
     }
-    header .container nav ul li a:hover:not(a.contact-us){
+    header .container nav ul li a:hover,
+    header .container nav ul li .active{
         color: var(--main-color);
-    }
-    header .container nav ul li a.contact-us{
-        color: var(--secondary-color);
     }
 }
 section{
