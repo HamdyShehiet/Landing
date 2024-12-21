@@ -226,5 +226,9 @@ header .container nav ul li a{
     font-size: var(--fs-20px);
     font-weight: 500;
     color: var(--text-color);
-
 }
+/* footer .container .secondary-navbar ul{
+    display: flex;
+    gap: 25px;
+    color: var(--text-color);
+} */
