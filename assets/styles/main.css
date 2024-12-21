@@ -58,7 +58,6 @@ h1{
     color: var(--title-color);
 }
 h2.title{
-    font-size: var(--fs-36px);
     font-size: clamp(30px,5vw,var(--fs-36px));
     color: var(--title-color);
 }
@@ -71,6 +70,7 @@ h3.title{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 .grid{
     display: grid;
@@ -97,7 +97,7 @@ h3.title{
 }
 /* Components */
 header{
-    position: fixed;
+    position: sticky;
     top:0;
     z-index: 10;
     width:100%;
@@ -159,12 +159,8 @@ header .container nav ul li a{
 section{
     padding: var(--section-padding) 0;
 }
-.hero{
-    padding: calc(var(--section-padding) + 30px)  0;
-}
-.hero .container {
-    align-items: center;
-    height: 100vh;
+.hero .container{
+    min-height: calc(100vh - 100px);
 }
 section .container .col .links{
     display: flex;
@@ -178,25 +174,43 @@ section .container .col .links a:first-child{
 section .container .col .links a:last-child{
     border: 2px solid var(--title-color);
 }
+.light .container .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+    margin-top: 30px;
+}
+.light .container .cards  img{
+    width: 70px;
+}
 @media (max-width:991px) {
-    .hero .container img{
+    .hero .container .image-box{
         display: none;
     }
     section .container .col .links{
         justify-content: center;
     }
+    .light .container .cards {
+        text-align: center;
+    }
 }
 @media (min-width:992px) {
-    section .container .col{
-        flex-basis: 45%;
-    }
     section .container{
+        row-gap: 30px;
         justify-content: space-between;
     }
-    .hero .container img{
+    section .container .col{
+        flex-basis: 49%;
+    }
+    .hero .container .image-box{
+        width: 50%;
         position: absolute;
-        top: -20px;
+        top: 0;
         right: 0;
         z-index: -1;
+    }
+    .light .container .cards .card{
+        flex-basis: 45%;
     }
 }
