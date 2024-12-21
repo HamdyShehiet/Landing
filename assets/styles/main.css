@@ -66,9 +66,10 @@ h3.title{
     color: var(--title-color);
 }
 /* Utility Classes */
-/* .flex{
+.flex{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .grid{
     display: grid;
@@ -78,34 +79,19 @@ h3.title{
     align-items: center;
 }
 .description{
-    margin: 16px 0;
+    margin: 20px 0;
     line-height: 1.6;
     font-size: var(--fs-16px);
 }
 .text-center{
     text-align: center;
 }
-.underline::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    transform: translateX(50%);
-    width: 50px;
-    height: 2px;
-}
 .special-btn{
-    display: inline-flex;
-    padding: 10px 20px;
+    display: inline-block;
+    padding: 8px 20px;
     font-size: var(--fs-16px);
     font-weight: 500;
-    border-radius: 4px;
-}
-.clr-white{
-    background-color: var(--clr-white);
-}
-.text-white{
-    color: var(--clr-white);
+    border-radius: 3px;
 }
 /* Components */
 /* header{
